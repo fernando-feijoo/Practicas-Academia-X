@@ -16,16 +16,17 @@
 6. Asegúrate de que cada página individual tenga un enlace de "regresar" o "volver" que permita al usuario regresar a la galería de miniaturas.
 
 7. Usa esta estructura de archivos:
-
+```
 └── 📂Reto-Imagenes
   ├── galeria.html
   ├── imagen1.html
   ├── imagen2.html
   ├── imagen3.html
-  ├── 📂imagenes
-    ├── imagen1.jpg
-    ├── imagen2.jpeg
-    └── imagen3.jpg
+  ├── 📂imagenes 
+    ├── imagen1.jpg 
+    ├── imagen2.jpeg 
+    └── imagen3.jpg 
+```
 
 8. **Compara tu solución** con la solución incluida en los archivos y descubre que partes pudiste hacer de mejor manera. No te preocupes si encuentras etiquetas que no conocías, ya las conocerás! 🙌 Buenas habilidades! 🔥 
 
