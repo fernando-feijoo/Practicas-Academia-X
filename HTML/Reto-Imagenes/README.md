@@ -7,15 +7,16 @@
 
 2. Agrega al menos 3 imágenes a tu proyecto. Puedes utilizar imágenes de paisajes, naturaleza, o cualquier otro tema que desees.
 
-3. En el archivo HTML, crea una estructura de lista (<ul>) para mostrar las imágenes como miniaturas.
+3. En el archivo HTML, crea una estructura de lista (&lt;ul>) para mostrar las imágenes como miniaturas.
 
-4. Dentro de la lista, utiliza etiquetas <li> para cada imagen y envuelve cada imagen en un enlace (<a>) para que los usuarios puedan hacer clic en ellas.
+4. Dentro de la lista, utiliza etiquetas &lt;li> para cada imagen y envuelve cada imagen en un enlace (&lt;a>) para que los usuarios puedan hacer clic en ellas.
 
 5. Cuando un usuario hace clic en una miniatura, debe llevarlo a una página separada que muestre la imagen en tamaño completo. Para hacerlo, crea una página HTML adicional para cada imagen grande.
 
 6. Asegúrate de que cada página individual tenga un enlace de "regresar" o "volver" que permita al usuario regresar a la galería de miniaturas.
 
 7. Usa esta estructura de archivos:
+
 - galeria.html
 - imagenes/
 - imagen1.jpg
@@ -26,6 +27,7 @@
 - imagen2.html
 - imagen3.html
 - ...
+
 8. **Compara tu solución** con la solución incluida en los archivos y descubre que partes pudiste hacer de mejor manera. No te preocupes si encuentras etiquetas que no conocías, ya las conocerás! 🙌 Buenas habilidades! 🔥 
 
 **Pistas:**
