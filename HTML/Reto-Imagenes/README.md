@@ -17,16 +17,15 @@
 
 7. Usa esta estructura de archivos:
 
-- galeria.html
-- imagenes/
-- imagen1.jpg
-- imagen2.jpg
-- imagen3.jpg
-- ...
-- imagen1.html
-- imagen2.html
-- imagen3.html
-- ...
+└── 📂Reto-Imagenes
+  ├── galeria.html
+  ├── imagen1.html
+  ├── imagen2.html
+  ├── imagen3.html
+  ├── 📂imagenes
+    ├── imagen1.jpg
+    ├── imagen2.jpeg
+    └── imagen3.jpg
 
 8. **Compara tu solución** con la solución incluida en los archivos y descubre que partes pudiste hacer de mejor manera. No te preocupes si encuentras etiquetas que no conocías, ya las conocerás! 🙌 Buenas habilidades! 🔥 
 
