@@ -19,6 +19,8 @@ Crear un sitio web sencillo con varias páginas HTML relacionadas que contenga e
 * Guarda el archivo.
 * Se debería ver así:
 
+![Primera Imagen](https://raw.githubusercontent.com/fernando-feijoo/Practicas-Academia-X/master/HTML/Reto-Navegacion/Imagen-Uno.webp)
+
 3. Diseña las Páginas Internas (libro1.html,libro2.html,libro3.html):
 
 * Abre cada uno de los archivos libro1.html,libro2.html, y libro3.html.
@@ -27,6 +29,8 @@ Crear un sitio web sencillo con varias páginas HTML relacionadas que contenga e
 * En cada página, crea una sección que contenga información relacionada con el tema de esa página. Por ejemplo, si estás creando un sitio web sobre libros, cada página podría estar dedicada a un libro diferente.
 * Guarda cada archivo después de crear su contenido.
 * Se deberían ver así:
+
+![Segunda Imagen](https://raw.githubusercontent.com/fernando-feijoo/Practicas-Academia-X/master/HTML/Reto-Navegacion/Imagen-Dos.webp)
 
 4. Enlaza las Páginas:
 
