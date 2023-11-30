@@ -24,12 +24,9 @@ Este repositorio tiene como objetivo organizar y almacenar las prácticas llevad
   + [Reto: Variables y tipos de datos](https://github.com/fernando-feijoo/Practicas-Academia-X/tree/master/JavaScript/Reto-VariablesTiposDatos)
   + [Reto: Operadores](https://github.com/fernando-feijoo/Practicas-Academia-X/tree/master/JavaScript/Reto-Operadores)
   + [Reto: Condicionales](https://github.com/fernando-feijoo/Practicas-Academia-X/tree/master/JavaScript/Reto-Condicionales)
-
-###
+  + [Reto: Bucles](https://github.com/fernando-feijoo/Practicas-Academia-X/tree/master/JavaScript/Reto-Bucles)
 
 <h2 align="left">📌ꜱᴏᴄɪᴀʟ ᴍᴇᴅɪᴀ</h2>
-
-###
 
 <div align="left">
   <a href="https://www.youtube.com/@academiax" target="_blank">
@@ -43,4 +40,3 @@ Este repositorio tiene como objetivo organizar y almacenar las prácticas llevad
   </a>
 </div>
 
-###
