@@ -44,6 +44,6 @@ console.log(
 
 // 7° linea encontrar la palabra en una cadena de texto.
 let cadena = "'La lluvia en Sevilla es una maravilla.'";
-let plabra = "lluvia";
+let palabra = "lluvia";
 let busqueda = cadena.match(/\blluvia\b/);
-console.log("Se encontró el patrón '" + plabra + "' en el texto " + cadena + ", por lo que el resultado es: " + busqueda);
+console.log("Se encontró el patrón '" + palabra + "' en el texto " + cadena + ", por lo que el resultado es: " + busqueda);
