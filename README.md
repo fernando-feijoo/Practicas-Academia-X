@@ -26,6 +26,7 @@ Este repositorio tiene como objetivo organizar y almacenar las prácticas llevad
   + [Reto: Condicionales](https://github.com/fernando-feijoo/Practicas-Academia-X/tree/master/JavaScript/Reto-Condicionales)
   + [Reto: Bucles](https://github.com/fernando-feijoo/Practicas-Academia-X/tree/master/JavaScript/Reto-Bucles)
   + [Reto: Funciones](https://github.com/fernando-feijoo/Practicas-Academia-X/tree/master/JavaScript/Reto-Funciones)
+  + [Reto: Programación Orientada a Objetos](https://github.com/fernando-feijoo/Practicas-Academia-X/tree/master/JavaScript/Reto-POO)
 
 <h2 align="left">📌ꜱᴏᴄɪᴀʟ ᴍᴇᴅɪᴀ</h2>
 
