@@ -28,6 +28,7 @@ Este repositorio tiene como objetivo organizar y almacenar las prácticas llevad
   + [Reto: Funciones](https://github.com/fernando-feijoo/Practicas-Academia-X/tree/master/JavaScript/Reto-Funciones)
   + [Reto: Programación Orientada a Objetos](https://github.com/fernando-feijoo/Practicas-Academia-X/tree/master/JavaScript/Reto-POO)
   + [Reto: Módulos](https://github.com/fernando-feijoo/Practicas-Academia-X/tree/master/JavaScript/Reto-Modulos)
+  + [Reto: Asincronía](https://github.com/fernando-feijoo/Practicas-Academia-X/tree/master/JavaScript/Reto-Asincronia)
 
 <h2 align="left">📌ꜱᴏᴄɪᴀʟ ᴍᴇᴅɪᴀ</h2>
 
