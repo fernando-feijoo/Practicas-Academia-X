@@ -2,6 +2,7 @@
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 
 # Practicas-Academia-X
 
@@ -20,7 +21,7 @@ Este repositorio tiene como objetivo organizar y almacenar las prácticas llevad
   + [Reto: Estructura - Pendiente]()
   + [Reto: Formularios - Pendiente]()
 
-+ 📂 JavaScript - En proceso de estudio
++ 📂 JavaScript
   + [Reto: Variables y tipos de datos](https://github.com/fernando-feijoo/Practicas-Academia-X/tree/master/JavaScript/Reto-VariablesTiposDatos)
   + [Reto: Operadores](https://github.com/fernando-feijoo/Practicas-Academia-X/tree/master/JavaScript/Reto-Operadores)
   + [Reto: Condicionales](https://github.com/fernando-feijoo/Practicas-Academia-X/tree/master/JavaScript/Reto-Condicionales)
@@ -29,6 +30,9 @@ Este repositorio tiene como objetivo organizar y almacenar las prácticas llevad
   + [Reto: Programación Orientada a Objetos](https://github.com/fernando-feijoo/Practicas-Academia-X/tree/master/JavaScript/Reto-POO)
   + [Reto: Módulos](https://github.com/fernando-feijoo/Practicas-Academia-X/tree/master/JavaScript/Reto-Modulos)
   + [Reto: Asincronía](https://github.com/fernando-feijoo/Practicas-Academia-X/tree/master/JavaScript/Reto-Asincronia)
+  + [Reto: Patrones](https://github.com/fernando-feijoo/Practicas-Academia-X/tree/master/JavaScript/Reto-Patrones)
+
++ 📂 React
 
 <h2 align="left">📌ꜱᴏᴄɪᴀʟ ᴍᴇᴅɪᴀ</h2>
 
