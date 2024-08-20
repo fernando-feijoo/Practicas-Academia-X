@@ -1,6 +1,7 @@
 # Reto: Estado
 
-`<link>` [Ver despliegue de reto](https://react.tfeijoo.com/reto-estado/) 👈🏻
+`<link>` <a href="https://react.tfeijoo.com/reto-estado/" target="_blank">Ver despliegue de reto</a> 👈🏻
+
 
 1. Crea un componente de tarjetas de productos el cual incluya una imagen, un titulo, una descripción y contador con la cantidad de artículos de ese producto. 🧠
 2. Intenta escribir el código de JSX y CSS que ves en esta página renderizada. No tiene que ser perfecto! 🧑‍💻
