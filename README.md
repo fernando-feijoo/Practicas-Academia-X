@@ -33,6 +33,7 @@ Este repositorio tiene como objetivo organizar y almacenar las prácticas llevad
   + [Reto: Patrones](https://github.com/fernando-feijoo/Practicas-Academia-X/tree/master/JavaScript/Reto-Patrones)
 
 + 📂 React
+  + [Reto: Estado](https://github.com/fernando-feijoo/Practicas-Academia-X/tree/master/React/Reto-Estado)
 
 <h2 align="left">📌ꜱᴏᴄɪᴀʟ ᴍᴇᴅɪᴀ</h2>
 
