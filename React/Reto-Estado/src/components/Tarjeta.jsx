@@ -1,9 +1,8 @@
-// 1. Crea un componente de tarjetas de productos el cual incluya
-// una imagen, un titulo, una descripción y contador con la cantidad de artículos de ese producto.
+/* eslint-disable react/prop-types */
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
 
-export default function Tarjeta() {
+export default function Tarjeta({ imgSrc, imgAlt, titulo, descripcion }) {
   const [contador, setContador] = useState(0);
 
   const subir = () => {
@@ -11,25 +10,31 @@ export default function Tarjeta() {
   };
 
   const restar = () => {
-    setContador(contador - 1);
+    if (contador > 0) {
+      setContador(contador - 1);
+    }
   };
 
   return (
     <div className="tarjeta">
       <div className="encabezado-tarjeta">
-        <img src="./src/assets/mando.webp" alt="Imagen de producto." />
+        <img src={imgSrc} alt={imgAlt} />
       </div>
       <div className="cuerpo-tarjeta">
         <div className="titulo-tarjeta">
-          <h1>Nombre del producto.</h1>
+          <h1>{titulo}</h1>
         </div>
         <div className="descripcion-tarjeta">
-          <p>Prueba de descripción.</p>
+          <p>{descripcion}</p>
         </div>
         <div className="contador-tarjeta">
-          <div className="btn-izquierdo" onClick={restar}>-</div>
+          <div className="btn" onClick={restar}>
+            -
+          </div>
           <div className="conteo">{contador}</div>
-          <div className="btn-derecho" onClick={subir}>+</div>
+          <div className="btn" onClick={subir}>
+            +
+          </div>
         </div>
       </div>
     </div>

@@ -1,14 +1,22 @@
+.contenedor-tarjetas {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en múltiples filas */
+  gap: 50px; /* Espacio entre las tarjetas */
+  justify-content: center; /* Centra las tarjetas horizontalmente */
+  margin-top: 50px;
+}
+
 .tarjeta {
-  width: 375px; 
-  height: 430px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: gray;
-  border-radius: 10px;
+  width: 445px;
+  /* height: 530px; Elimina la altura fija */
+  border-radius: 3.5%;
   overflow: hidden; /* Asegura que el contenido no se desborde */
   display: flex;
   flex-direction: column; /* Divide la tarjeta en dos secciones verticales */
+  position: relative; /* Necesario para que el box-shadow funcione correctamente */
+  box-shadow: inset 0 0 0 1px rgb(212, 212, 212); /* Crea un borde interno */
 }
+
 
 .encabezado-tarjeta {
   width: 100%;
@@ -24,31 +32,54 @@
 
 .cuerpo-tarjeta {
   width: 100%;
-  height: 50%; /* Ocupa la mitad inferior de la tarjeta */
-  padding: 10px;
+  padding: 20px;
   box-sizing: border-box; /* Incluye el padding en el tamaño total */
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Distribuye el espacio entre los elementos */
+  flex-grow: 1; /* Permite que el cuerpo crezca para llenar el espacio disponible */
 }
 
 .contador-tarjeta {
   display: flex;
   justify-content: space-between; /* Distribuye los botones y el contador en una fila */
   align-items: center; /* Alinea verticalmente los elementos */
+  margin-top: auto; /* Empuja el contador hacia la parte inferior */
 }
 
-.btn-izquierdo, .btn-derecho {
+.titulo-tarjeta h1 {
+  margin: 20px 0px 0px 0px;
+}
+
+.descripcion-tarjeta {
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Número de líneas que deseas mostrar */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  margin-bottom: 15px;
+  word-break: break-word;
+  line-break: normal;
+  hyphens: auto;
+  overflow-wrap: break-word;
+}
+
+.btn {
   width: 30px;
-  height: 30px;
+  height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ddd;
-  border-radius: 50%;
+  background-color: rgb(52, 152, 219);
+  font-size: 20px;
+  color: white;
+  font-weight: bolder;
+  border-radius: 5px;
   cursor: pointer;
+  user-select: none; /* Evita que el texto sea seleccionable */
 }
 
 .conteo {
   font-size: 20px;
+  font-weight: bolder;
 }
