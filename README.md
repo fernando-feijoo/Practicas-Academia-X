@@ -35,6 +35,7 @@ Este repositorio tiene como objetivo organizar y almacenar las prácticas llevad
 + 📂 React
   + [Reto: Estado](https://github.com/fernando-feijoo/Practicas-Academia-X/tree/master/React/Reto-Estado)
   + [Reto: Formulario](https://github.com/fernando-feijoo/Practicas-Academia-X/tree/master/React/Reto-Formulario)
+  + [Reto: Ganchos](https://github.com/fernando-feijoo/Practicas-Academia-X/tree/master/React/Reto-Ganchos)
 
 <h2 align="left">📌ꜱᴏᴄɪᴀʟ ᴍᴇᴅɪᴀ</h2>
 
