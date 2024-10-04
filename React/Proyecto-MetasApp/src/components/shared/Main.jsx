@@ -1,10 +1,10 @@
 function Main({ children }) {
   return (
     <>
-      <sidenav>
+      <aside>
         <a href='/lista'>Lista</a>
         <a href='/crear'>Crear</a>
-      </sidenav>
+      </aside>
       <main>
         {children}
       </main>
