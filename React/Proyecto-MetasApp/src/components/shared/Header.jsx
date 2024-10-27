@@ -1,23 +1,19 @@
-import  Logo from '../../assets/logo.svg';
-import  Perfil from '../../assets/perfil.svg';
-import './css/Header.css';
+import LogoSVG from '../../assets/logo.svg';
+import PerfilSVG from '../../assets/perfil.svg';
+import estilos from './css/Header.module.css';
+import Link from './Link';
 
 function Header() {
   return (
-    <header className='encabezado'>
-      <div className='contenedor'>
-        <Logo className='logo' />
-        <a className='titulo' href='/'>
+    <header className={estilos.encabezado}>
+      <div className={estilos.contenedor}>
+        <LogoSVG className={estilos.logo} />
+        <a className={estilos.titulo} href='/'>
           Metas App
         </a>
       </div>
       <nav>
-        <a
-          href='/perfil'
-          className='flex items-center px-4 h-xl hover:bg-gray-200'
-        >
-          <Perfil className='h-6 w-6' />
-        </a>
+        <Link href='/perfil' Icono={PerfilSVG} />
       </nav>
     </header>
   );

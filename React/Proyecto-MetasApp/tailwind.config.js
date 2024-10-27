@@ -8,6 +8,7 @@ export default {
         md: '16px',
         lg: '24px',
         xl: '48px',
+        principal: '64px',
       },
     },
   },
