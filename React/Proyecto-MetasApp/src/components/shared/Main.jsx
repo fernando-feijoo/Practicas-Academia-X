@@ -10,7 +10,7 @@ function Main({ children }) {
         <Link href='/lista' texto='Lista de Metas' Icono={NuevaSVG} />
         <Link href='/crear' texto='Nueva Meta' Icono={ListaSVG} />
       </aside>
-      <main className='main'>{children}</main>
+      <main className={estilos.main}>{children}</main>
     </div>
   );
 }
