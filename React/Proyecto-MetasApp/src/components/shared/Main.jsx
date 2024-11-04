@@ -7,8 +7,8 @@ function Main({ children }) {
   return (
     <div className={estilos.principal}>
       <aside className={estilos.aside}>
-        <Link href='/lista' texto='Lista de Metas' Icono={NuevaSVG} />
-        <Link href='/crear' texto='Nueva Meta' Icono={ListaSVG} />
+        <Link href='/lista' texto='Lista de Metas' Icono={ListaSVG} />
+        <Link href='/crear' texto='Nueva Meta' Icono={NuevaSVG} />
       </aside>
       <main className={estilos.main}>{children}</main>
     </div>

@@ -8,5 +8,11 @@
 }
 
 .main {
-  @apply w-full h-full overflow-scroll;
+  @apply w-full h-full overflow-scroll bg-gradient-to-br from-gray-100 via-gray-200 to-gray-200;
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  scrollbar-width: none;
+}
+
+.main::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
 }
