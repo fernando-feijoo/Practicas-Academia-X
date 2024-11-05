@@ -1,7 +1,7 @@
 import LogoSVG from '../../assets/logo.svg';
 import PerfilSVG from '../../assets/perfil.svg';
 import estilos from './css/Header.module.css';
-import Link from './Link';
+import Links from './Links';
 
 function Header() {
   return (
@@ -13,7 +13,7 @@ function Header() {
         </a>
       </div>
       <nav>
-        <Link href='/perfil' Icono={PerfilSVG} />
+        <Links to='/perfil' Icono={PerfilSVG} />
       </nav>
     </header>
   );
