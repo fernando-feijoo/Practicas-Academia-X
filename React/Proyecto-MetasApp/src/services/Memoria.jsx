@@ -1,4 +1,4 @@
-import { createContext, useReducer } from 'react';
+import { createContext, useReducer, useEffect } from 'react';
 
 const listaMock = [
   {
@@ -51,15 +51,32 @@ function reductor(estado, accion) {
       };
       return nuevoEstado;
     }
+    case 'crear': {
+      const id = Math.random(); // accion.metas.id;
+      const nuevoEstado = {
+        orden: [...estado.orden, id],
+        objetos: {
+          ...estado.objetos,
+          [id]: accion.meta,
+        },
+      };
+      return nuevoEstado;
+    }
   }
 }
 
-console.log(reductor(estadoInicial, { tipo: 'colocar', metas: listaMock }));
+// const metas = reductor(estadoInicial, { tipo: 'colocar', metas: listaMock });
 
 export const Contexto = createContext(null);
 
 function Memoria({ children }) {
   const [estado, enviar] = useReducer(reductor, estadoInicial);
+
+  // Esto lo implemente para que funcione el envió de metas, ya que no estaba funcionando y no se listaban las metas.
+  useEffect(() => {
+    enviar({ tipo: 'colocar', metas: listaMock });
+  }, []);
+
   return (
     <Contexto.Provider value={[estado, enviar]}>{children}</Contexto.Provider>
   );

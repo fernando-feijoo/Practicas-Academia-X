@@ -3,13 +3,14 @@ import Meta from './Meta';
 import { Contexto } from '../../services/Memoria';
 
 function Lista() {
-  const metas = useContext(Contexto);
+  const [estado, enviar] = useContext(Contexto);
+
   return (
-    <div>
-      {metas.map((meta) => (
-        <Meta key={meta.id} {...meta} />
+    <>
+      {estado.orden.map((id) => (
+        <Meta key={id} {...estado.objetos[id]}></Meta>
       ))}
-    </div>
+    </>
   );
 }
 
