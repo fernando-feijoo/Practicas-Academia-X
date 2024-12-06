@@ -1,9 +1,10 @@
+import { Link } from 'react-router-dom';
 import estilos from './Meta.module.css';
 
-function Meta({icono, eventos, periodo, detalles, meta, completado}) {
+function Meta({id, icono, eventos, periodo, detalles, meta, completado}) {
 
   return (
-    <div className={estilos.meta + ' tarjeta'}>
+    <Link to={`/lista/${id}`} className={estilos.meta + ' tarjeta'}>
       <div className='flex items-center'>
         <div className={estilos.icono}>{icono}</div>
         <p className={estilos.frecuenciaP}>
@@ -23,7 +24,7 @@ function Meta({icono, eventos, periodo, detalles, meta, completado}) {
         </div>
         <button className='boton boton--gris'>Completado</button>
       </div>
-    </div>
+    </Link>
   );
 }
 
