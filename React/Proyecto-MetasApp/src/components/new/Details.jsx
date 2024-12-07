@@ -5,8 +5,10 @@ import { useNavigate, useParams } from 'react-router-dom';
 
 function Details() {
   const { id } = useParams();
+  const navegar = useNavigate();
 
   const [form, setForm] = useState({
+    id: '',
     detalles: '',
     eventos: 1,
     periodo: 'semana',
@@ -31,12 +33,10 @@ function Details() {
       return navegar('/lista');
     }
     setForm(estado.objetos[id]);
-  }, [id]);
-
-  const navegar = useNavigate();
+  }, [id, estado.objetos, navegar]);
 
   const crear = () => {
-    enviar({ tipo: 'crear', meta: form });
+    enviar({ tipo: 'crear', meta: { ...form, id: '' } }); // Enviar sin id
     navegar('/lista');
   };
 

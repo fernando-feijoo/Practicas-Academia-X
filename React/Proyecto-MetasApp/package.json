@@ -15,6 +15,7 @@
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.28.0",
     "tailwindcss-neumorphism": "^0.1.0",
+    "uuid": "^11.0.3",
     "vite-plugin-svgr": "^4.2.0"
   },
   "devDependencies": {
