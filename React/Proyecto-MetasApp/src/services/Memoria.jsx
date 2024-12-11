@@ -93,6 +93,8 @@ function reductor(estado, accion) {
       localStorage.setItem('metas', JSON.stringify(nuevoEstado));
       return nuevoEstado;
     }
+    default:
+      throw new Error();
   }
 }
 
