@@ -1,5 +1,5 @@
 import { createContext, useReducer } from 'react';
-import { v4 as uuidv4 } from 'uuid';
+// import { v4 as uuidv4 } from 'uuid';
 
 // (**)--->> Inicio <<---(**)
 // || Se comento todo este código porque se empezó a usar localStorage. ||
@@ -38,13 +38,22 @@ import { v4 as uuidv4 } from 'uuid';
 // ];
 // (**)--->> Fin <<---(**)
 
-const memoria = localStorage.getItem('metas');
-const estadoInicial = memoria
-  ? JSON.parse(memoria)
-  : {
-      orden: [],
-      objetos: {},
-    };
+
+// (**)--->> Inicio <<---(**)
+// || Se comento esto porque no se necesitaba ya que se implemento el API para hacer uso de datos desde el BackEnd ||
+// const memoria = localStorage.getItem('metas');
+// const estadoInicial = memoria
+//   ? JSON.parse(memoria)
+//   : {
+//       orden: [],
+//       objetos: {},
+//     };
+// (**)--->> Fin <<---(**)
+
+const estadoInicial = {
+  orden: [],
+  objetos: {},
+};
 
 function reductor(estado, accion) {
   switch (accion.tipo) {
@@ -57,19 +66,19 @@ function reductor(estado, accion) {
           {}
         ),
       };
-      localStorage.setItem('metas', JSON.stringify(nuevoEstado));
+      // localStorage.setItem('metas', JSON.stringify(nuevoEstado));
       return nuevoEstado;
     }
     case 'crear': {
-      const id = uuidv4();
+      const id = accion.meta.id;
       const nuevoEstado = {
         orden: [...estado.orden, id],
         objetos: {
           ...estado.objetos,
-          [id]: { ...accion.meta, id }, // Asignar id aquí
+          [id]: accion.meta, 
         },
       };
-      localStorage.setItem('metas', JSON.stringify(nuevoEstado));
+      // localStorage.setItem('metas', JSON.stringify(nuevoEstado));
       return nuevoEstado; // Devolver solo el nuevo estado
     }
     case 'actualizar': {
@@ -79,7 +88,7 @@ function reductor(estado, accion) {
         ...accion.meta,
       };
       const nuevoEstado = { ...estado };
-      localStorage.setItem('metas', JSON.stringify(nuevoEstado));
+      // localStorage.setItem('metas', JSON.stringify(nuevoEstado));
       return nuevoEstado;
     }
     case 'borrar': {
@@ -90,7 +99,7 @@ function reductor(estado, accion) {
         orden: nuevoOrden,
         objetos: estado.objetos,
       };
-      localStorage.setItem('metas', JSON.stringify(nuevoEstado));
+      // localStorage.setItem('metas', JSON.stringify(nuevoEstado));
       return nuevoEstado;
     }
     default:

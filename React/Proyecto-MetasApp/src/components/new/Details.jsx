@@ -2,13 +2,13 @@ import { useEffect, useState, useContext } from 'react';
 import estilos from './Details.module.css';
 import { Contexto } from '../../services/Memoria';
 import { useNavigate, useParams } from 'react-router-dom';
+import { actualizarMeta, crearMeta, borrarMeta } from '../../services/Requests';
 
 function Details() {
   const { id } = useParams();
   const navegar = useNavigate();
 
   const [form, setForm] = useState({
-    id: '',
     detalles: '',
     eventos: 1,
     periodo: 'semana',
@@ -35,18 +35,21 @@ function Details() {
     setForm(estado.objetos[id]);
   }, [id, estado.objetos, navegar]);
 
-  const crear = () => {
-    enviar({ tipo: 'crear', meta: { ...form, id: '' } }); // Enviar sin id
+  const crear = async () => {
+    const nuevaMeta = await crearMeta();
+    enviar({ tipo: 'crear', meta: nuevaMeta });
     navegar('/lista');
   };
 
-  const actualizar = () => {
-    enviar({ tipo: 'actualizar', meta: form });
+  const actualizar = async () => {
+    const metaActualizada = await actualizarMeta();
+    enviar({ tipo: 'actualizar', meta: metaActualizada });
     navegar('/lista');
   };
 
-  const borrar = () => {
-    enviar({ tipo: 'borrar', id });
+  const borrar = async () => {
+    const idBorrada = await borrarMeta();
+    enviar({ tipo: 'borrar', id: idBorrada });
     navegar('/lista');
   };
 

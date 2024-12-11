@@ -5,8 +5,23 @@ import Lista from './components/list/Lista';
 import Detalles from './components/new/Details';
 import NotFound from './components/shared/NotFound';
 import Modal from './components/shared/Modal';
+import { useContext, useEffect } from 'react';
+import { pedirMetas } from './services/Requests';
+import { Contexto } from './services/Memoria';
 
 function App() {
+  const [, enviar] = useContext(Contexto);
+  useEffect(() => {
+    (async function () {
+      try {
+        const metas = await pedirMetas();
+        enviar({ tipo: 'colocar', metas });
+      } catch (error) {
+        console.error('Error al obtener las metas:', error);
+      }
+    })();
+  }, [enviar]);
+
   return (
     <Routes>
       <Route path='/' element={<Layout />}>
