@@ -1,44 +1,53 @@
-import './App.css';
-import { Route, Routes } from 'react-router-dom';
-import Layout from './components/shared/Layout';
-import Lista from './components/list/Lista';
-import Detalles from './components/new/Details';
-import NotFound from './components/shared/NotFound';
-import Modal from './components/shared/Modal';
-import { useContext, useEffect } from 'react';
-import { pedirMetas } from './services/Requests';
-import { Contexto } from './services/Memoria';
+import React from "react";
+import { useContext, useEffect } from "react";
+import { Routes, Route, Navigate } from "react-router";
+import "./App.css";
+import Acceso from "./componentes/publico/acceso/Acceso";
+import Layout from "./componentes/compartidos/Layout";
+import Modal from "./componentes/compartidos/Modal";
+import NoEncontrado from "./componentes/compartidos/NoEncontrado";
+import Lista from "./componentes/privado/lista/Lista";
+import Detalles from "./componentes/privado/nueva/Detalles";
+import { ContextoMetas } from "./memoria/Metas";
+import { pedirMetas } from "./servicios/Metas";
+import Registro from "./componentes/publico/registro/Registro";
+import { Autenticar } from "./componentes/compartidos/Autenticar";
 
 function App() {
-  const [, enviar] = useContext(Contexto);
-  useEffect(() => {
+  const [, enviar] = useContext(ContextoMetas);
+
+  useEffect( () => {
     (async function () {
-      try {
-        const metas = await pedirMetas();
-        enviar({ tipo: 'colocar', metas });
-      } catch (error) {
-        console.error('Error al obtener las metas:', error);
-      }
+      const metas = await pedirMetas();
+      enviar({ tipo: "colocar", metas });
     })();
   }, [enviar]);
 
   return (
     <Routes>
-      <Route path='/' element={<Layout />}>
-        <Route index element={<Lista />} />
-        <Route path='/lista' element={<Lista />}>
-          <Route
-            path='/lista/:id'
-            element={
-              <Modal>
-                <Detalles />
-              </Modal>
-            }
-          />
-        </Route>
-        <Route path='/nueva' element={<Detalles />} />
+      <Route path="/"
+        element={<Navigate to="/lista" />}
+      />
+      <Route element={<Layout />}>
+        <Route path="/acceso" element={<Acceso />} />
+        <Route path="/registro" element={<Registro />} />
+        <Route path="*" element={<NoEncontrado />} />
       </Route>
-      <Route path='*' element={<NotFound />} />
+      <Route element={<Layout privado />}>
+        <Route element={<Autenticar />} >
+          <Route path="/lista" element={<Lista />}>
+            <Route
+              path="/lista/:id"
+              element={
+                <Modal>
+                  <Detalles />
+                </Modal>
+              }
+            />
+          </Route>
+          <Route path="/nueva" element={<Detalles />} />
+        </Route>
+      </Route>
     </Routes>
   );
 }
